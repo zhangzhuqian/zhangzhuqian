@@ -1,0 +1,8 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+Disallow: /js/
+Disallow: /css/
+Sitemap: http://qianpm.com/sitemap.xml
+Sitemap: http://qianpm.com/baidusitemap.xml
