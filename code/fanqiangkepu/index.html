@@ -1,0 +1,1102 @@
+<!doctype html>
+
+
+
+
+<html class="theme-next pisces" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="Y4at37OKFXTZ2pYFBR3RDz0akfS4PqA1l5ylTpGNR5s" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="科学上网," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="停云馆" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.4" />
+
+
+
+
+
+
+<meta name="description" content="随着中国搭建GFW(不了解的请自行谷歌,嘿嘿),阻碍了互联网信息的流动，国外一些很棒的服务和网站(eg: Google,Dropbox)在国内都无法正常访问,于是翻墙越来越成为新时代国人上网的必备技能之一，今天就为大家梳理一下翻墙的前世今生 翻墙技术的演变​    翻墙顾名思义就是翻越GFW，简单来说就是利用加密(让墙无法知道你访问的是什么内容),代理(以国外未被限制的网址访问这些GFW拦截的网站">
+<meta name="keywords" content="科学上网">
+<meta property="og:type" content="article">
+<meta property="og:title" content="科学上网简易科普">
+<meta property="og:url" content="http://qianpm.com/code/fanqiangkepu/index.html">
+<meta property="og:site_name" content="停云馆">
+<meta property="og:description" content="随着中国搭建GFW(不了解的请自行谷歌,嘿嘿),阻碍了互联网信息的流动，国外一些很棒的服务和网站(eg: Google,Dropbox)在国内都无法正常访问,于是翻墙越来越成为新时代国人上网的必备技能之一，今天就为大家梳理一下翻墙的前世今生 翻墙技术的演变​    翻墙顾名思义就是翻越GFW，简单来说就是利用加密(让墙无法知道你访问的是什么内容),代理(以国外未被限制的网址访问这些GFW拦截的网站">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-04-14T09:17:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="科学上网简易科普">
+<meta name="twitter:description" content="随着中国搭建GFW(不了解的请自行谷歌,嘿嘿),阻碍了互联网信息的流动，国外一些很棒的服务和网站(eg: Google,Dropbox)在国内都无法正常访问,于是翻墙越来越成为新时代国人上网的必备技能之一，今天就为大家梳理一下翻墙的前世今生 翻墙技术的演变​    翻墙顾名思义就是翻越GFW，简单来说就是利用加密(让墙无法知道你访问的是什么内容),代理(以国外未被限制的网址访问这些GFW拦截的网站">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: false,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://qianpm.com/code/fanqiangkepu/"/>
+
+
+
+
+
+  <title> 科学上网简易科普 | 停云馆 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-98800801-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=61491053";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+<script>
+  	var _mtac = {};
+  	(function() {
+  		var mta = document.createElement("script");
+  		mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";
+  		mta.setAttribute("name", "MTAH5");
+  		mta.setAttribute("sid", "500451373");
+
+  		var s = document.getElementsByTagName("script")[0];
+  		s.parentNode.insertBefore(mta, s);
+  	})();
+</script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">停云馆</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Seafun</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://qianpm.com/code/fanqiangkepu/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Seafun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="停云馆">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                科学上网简易科普
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-07T17:16:08+08:00">
+                2017-04-07
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-04-14T17:17:46+08:00">
+                2017-04-14
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/code/" itemprop="url" rel="index">
+                    <span itemprop="name">程序猿</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+<br>
+          
+          
+          <span class="post-count">
+            <span class="post-meta-item-icon">
+          	<i class="fa fa-file-word-o"></i>
+            </span>
+            <span class="post-meta-item-text">本文共</span>
+            <span class="post-meta-item-text"></span>
+            <span class="post-meta-item-text">字</span>
+          </span>
+          
+          <span class="post-count">
+            &nbsp; | &nbsp;
+            <span class="post-meta-item-icon">
+          	<i class="fa fa-clock-o"></i>
+            </span>
+            <span class="post-meta-item-text">阅读预计</span>
+            <span class="post-meta-item-text"></span>
+            <span class="post-meta-item-text">分钟</span>
+          </span>
+          
+
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>随着中国搭建GFW(不了解的请自行谷歌,嘿嘿),阻碍了互联网信息的流动，国外一些很棒的服务和网站(eg: Google,Dropbox)在国内都无法正常访问,于是翻墙越来越成为新时代国人上网的必备技能之一，今天就为大家梳理一下翻墙的前世今生</p>
+<h2 id="翻墙技术的演变"><a href="#翻墙技术的演变" class="headerlink" title="翻墙技术的演变"></a>翻墙技术的演变</h2><p>​    翻墙顾名思义就是翻越GFW，简单来说就是利用加密(让墙无法知道你访问的是什么内容),代理(以国外未被限制的网址访问这些GFW拦截的网站),伪装(网络流量的伪装)这些方式来访问被封的网站.</p>
+<p>翻墙的方式有哪些，接下来为大家依次介绍</p>
+<h3 id="PAC文件-代理自动配置"><a href="#PAC文件-代理自动配置" class="headerlink" title="PAC文件(代理自动配置)"></a>PAC文件(代理自动配置)</h3><ul>
+<li>PAC文件翻墙是指通过PAC文件告知浏览器当前访问的网址是否需要进行代理来实现翻墙功能</li>
+<li>使用方法(直接利用PAC翻墙)<ul>
+<li>在WIFI设置中增加链接即可实现部分翻墙</li>
+<li>在iOS设置中增加描述性文件</li>
+</ul>
+</li>
+<li>优点：方便快捷,几乎不需要了解其他操作</li>
+<li>缺点：无法使某些APP翻墙（eg：facebook，telegarm），实用性不高</li>
+<li>使用场景:利用代理服务器进行翻墙,而利用PAC自动设置某些网站过代理服务器,目前最知名的pac当属gfwlist了</li>
+</ul>
+<h3 id="VPN-虚拟专用网络"><a href="#VPN-虚拟专用网络" class="headerlink" title="VPN(虚拟专用网络)"></a>VPN(虚拟专用网络)</h3><ul>
+<li>使用方法<ol>
+<li>VPN设置中设置服务器和密码,选择支持方式(PPTP&amp;L2TP)</li>
+<li>开启VPN,即可实现翻墙功能</li>
+</ol>
+</li>
+<li>优点：<ul>
+<li>快速上手,便利性好,几乎所有设备,操作系统都提供VPN连接服务</li>
+<li>在系统自带的VPN中设置服务器节点即可开启代理</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>不能方便的对IP进行分流,简单可理解为翻墙即为全翻</li>
+<li>不能方便的进行自动连接</li>
+<li>目前GFW加强了对VPN翻墙服务的封锁，所以你懂的</li>
+</ul>
+</li>
+</ul>
+<h3 id="shadowsocks-SS-推荐"><a href="#shadowsocks-SS-推荐" class="headerlink" title="shadowsocks(SS) {推荐}"></a>shadowsocks(SS) {推荐}</h3><ul>
+<li>由来：SS是最早由国人clowwindy发布在github上,虽然之后经历作者被喝茶,代码被删除(在 2015 年 8 月 22 日，Shadowsocks 原作者 Clowwindy 称受到了<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%A1%E6%9F%A5" target="_blank" rel="noopener">中国政府的压力</a>，宣布停止维护此计划（项目）并移除其个人页面所存储的源代码),但是之后国人重新拾起shadowsocks,将其发扬光大以及延伸,成为国人目前的主流翻墙方式</li>
+<li>使用方法<ol>
+<li>下载ss应用(下篇介绍这些应用)</li>
+<li>输入代理服务器和密码</li>
+<li>选择基于gfwlist的pac(国内外自动分流)</li>
+<li>长期开启ss应用</li>
+<li>完成翻墙,之后完全不需要再管</li>
+</ol>
+</li>
+<li>优点:<ul>
+<li>轻量级socks代理</li>
+<li>平台支持广泛(iOS,Android,Win,Linux)</li>
+<li>抗干扰能力强(这是重点)</li>
+</ul>
+</li>
+<li>缺点:<ul>
+<li>需要搭配APP使用(缺点太小,可以忽略)</li>
+</ul>
+</li>
+</ul>
+<h3 id="SSR-推荐"><a href="#SSR-推荐" class="headerlink" title="SSR  {推荐}"></a>SSR  {推荐}</h3><ul>
+<li>SSR是在SS的基础上发展起来的(这是笔糊涂账,不展开),目前主力是由少女破娃酱团队进行维护</li>
+<li>使用方法:<ul>
+<li>同SS</li>
+</ul>
+</li>
+<li>优点:<ul>
+<li>相比SS增加了混淆功能,提升了GFW识别的成本(不能说完全杜绝)</li>
+</ul>
+</li>
+<li>缺点:<ul>
+<li>需要搭配指定的客户端使用才能使用到所有特性</li>
+</ul>
+</li>
+</ul>
+<h2 id="怎么翻墙"><a href="#怎么翻墙" class="headerlink" title="怎么翻墙"></a>怎么翻墙</h2><p>​    介绍了这么多翻墙方式,那么怎么翻墙呢</p>
+<ol>
+<li>寻找提供代理服务的网站,目前这样的网站很多,免费和付费均有</li>
+<li>选择合适的翻墙方式,根据网站提供的配置方式进行配置</li>
+<li>一键开启,即可冲浪在自由的互联网世界了</li>
+</ol>
+<h2 id="科学上网之后可以做什么"><a href="#科学上网之后可以做什么" class="headerlink" title="科学上网之后可以做什么"></a>科学上网之后可以做什么</h2><ul>
+<li>第一时间上谷歌全家桶:谷歌服务框架,谷歌搜索,谷歌日历,谷歌云服务…</li>
+<li>推特,脸书,ins,汤博乐,quara等等</li>
+<li>dropbox等云服务,在此只推荐dropbox,需要ss搭配proxifier使用</li>
+<li>telegram  联络工具,在中国没法聊的事情,大家都在telegram上聊</li>
+</ul>
+<h2 id="临时火花"><a href="#临时火花" class="headerlink" title="临时火花:"></a>临时火花:</h2><p>​    在了解的过程中,其实更多的是对95后的钦佩,他们从小就开始接触网络,了解万里长城,科学上网,其中目前的主力破娃酱,主流的ss站模板都是95后来完成的,甚至有个正在高考的妹子,也在不遗余力的宣传怎样去建站翻墙,不过他们有个共同点,热爱二次元文化,难道真像知乎大V 轮子哥说的,想要成为个优秀的程序猿,首先要穿女装</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>​    对于国人来说,前人已经提供好了梯子,所以想要翻墙需要做的只是寻找代理服务器和选择翻墙方式</p>
+<hr>
+<h2 id="下篇简介"><a href="#下篇简介" class="headerlink" title="下篇简介"></a><a href="http://qianpm.com/posts/cj1awojzm002xeifyzroax6mr.html">下篇简介</a></h2><p>​    承接上文,在各种翻墙方式中,PAC和VPN这两种翻墙方式基本上只需要系统的支持,所以我们主要为大家梳理的是支持SS/SSR服务的APP</p>
+<h3 id="iOS"><a href="#iOS" class="headerlink" title="iOS :"></a>iOS :</h3><p>​    苹果在iOS9上开放了NE权限,SS得以在不越狱的iOS上实现</p>
+<ul>
+<li>ShadowRocket 又名小火箭<ul>
+<li>优点<ul>
+<li>目前相对稳定</li>
+<li>支持SSR</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Surge SS领域最知名<ul>
+<li>优点:<ul>
+<li>老牌的翻墙应用</li>
+<li>品质值得信赖</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>目前只支持SS，使用SSR服务时,无法发挥其所有特性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Wingy<ul>
+<li>优点<ul>
+<li>免费</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>暂时无法长期使用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Potatso（土豆丝）<ul>
+<li>曾经开放源代码</li>
+<li>当前已经上线potatso2</li>
+</ul>
+</li>
+<li>vpnmaster pro<ul>
+<li>一键连接</li>
+<li>速度无法保证</li>
+</ul>
+</li>
+</ul>
+<h3 id="Android"><a href="#Android" class="headerlink" title="Android:"></a>Android:</h3><ul>
+<li>ssr-and<ul>
+<li>Android端翻墙工具</li>
+<li>支持SS/SSR</li>
+</ul>
+</li>
+</ul>
+<h3 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h3><ul>
+<li>ShadowsocksX-NG-R8<ul>
+<li>支持SS/SSR</li>
+<li>使用方法<ol>
+<li>扫描二维码/批量导入/手动录入代理服务器节点信息</li>
+<li>更新gfwlist文件</li>
+<li>选择节点</li>
+<li>开启服务</li>
+<li>Bingo！</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Proxifier <ul>
+<li>解决问题：在已经有ss代理的情况下，某些app不能翻墙（eg：Dropbox）</li>
+<li>作用：强制设置某些app必须走代理</li>
+</ul>
+</li>
+</ul>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><ul>
+<li>ssr-win</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://ww2.sinaimg.cn/large/006tNc79ly1ffhb1j29gkj30ic0icgnx.jpg" alt="Seafun wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫一扫上面的二维码加我微信！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/wechat-qcode.png" alt="Seafun WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/uploads/alipay-qcode.png" alt="Seafun Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/fanqiang/" rel="tag"># 科学上网</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/pm-tabloid/pm-fanqiang/" rel="next" title="产品小报-科学上网类">
+                <i class="fa fa-chevron-left"></i> 产品小报-科学上网类
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/code/fanqianggongju/" rel="prev" title="科学上网工具介绍">
+                科学上网工具介绍 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Seafun" />
+          <p class="site-author-name" itemprop="name">Seafun</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">73</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">53</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/zhangzhuqian" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/zhangzhuqian" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/1789347757/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/zhangzhuqian" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://ww4.sinaimg.cn/large/006tNbRwly1fclh3brl76j30iq0ow76j.jpg" target="_blank" title="微信">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微信
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://qianpm.com/about/" title="友情链接申请" target="_blank">友情链接申请</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#翻墙技术的演变"><span class="nav-number">1.</span> <span class="nav-text">翻墙技术的演变</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PAC文件-代理自动配置"><span class="nav-number">1.1.</span> <span class="nav-text">PAC文件(代理自动配置)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VPN-虚拟专用网络"><span class="nav-number">1.2.</span> <span class="nav-text">VPN(虚拟专用网络)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shadowsocks-SS-推荐"><span class="nav-number">1.3.</span> <span class="nav-text">shadowsocks(SS) {推荐}</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSR-推荐"><span class="nav-number">1.4.</span> <span class="nav-text">SSR  {推荐}</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么翻墙"><span class="nav-number">2.</span> <span class="nav-text">怎么翻墙</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#科学上网之后可以做什么"><span class="nav-number">3.</span> <span class="nav-text">科学上网之后可以做什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#临时火花"><span class="nav-number">4.</span> <span class="nav-text">临时火花:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下篇简介"><span class="nav-number">6.</span> <span class="nav-text">下篇简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS"><span class="nav-number">6.1.</span> <span class="nav-text">iOS :</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android"><span class="nav-number">6.2.</span> <span class="nav-text">Android:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mac"><span class="nav-number">6.3.</span> <span class="nav-text">Mac</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows"><span class="nav-number">6.4.</span> <span class="nav-text">Windows</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+
+&copy;  2017 - 
+<span itemprop="copyrightYear">2018</span>
+<span class="with-love">
+<i class="fa fa-heart"></i>
+</span>
+<span class="author" itemprop="copyrightHolder">Seafun</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访客数<class="fa fa-user">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量<class="fa fa-eye">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="true"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+</body>
+</html>

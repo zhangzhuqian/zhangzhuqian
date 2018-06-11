@@ -1,0 +1,965 @@
+<!doctype html>
+
+
+
+
+<html class="theme-next pisces" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="Y4at37OKFXTZ2pYFBR3RDz0akfS4PqA1l5ylTpGNR5s" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="区块链," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="停云馆" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.4" />
+
+
+
+
+
+
+<meta name="description" content="区块链与比特币">
+<meta name="keywords" content="区块链">
+<meta property="og:type" content="article">
+<meta property="og:title" content="区块链与比特币">
+<meta property="og:url" content="http://qianpm.com/code/blockchain/index.html">
+<meta property="og:site_name" content="停云馆">
+<meta property="og:description" content="区块链与比特币">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcly1ffr2o2lobhj30go0cwt93.jpg">
+<meta property="og:updated_time" content="2017-05-19T15:18:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="区块链与比特币">
+<meta name="twitter:description" content="区块链与比特币">
+<meta name="twitter:image" content="https://ws3.sinaimg.cn/large/006tKfTcly1ffr2o2lobhj30go0cwt93.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: false,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://qianpm.com/code/blockchain/"/>
+
+
+
+
+
+  <title> 区块链与比特币 | 停云馆 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-98800801-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=61491053";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+<script>
+  	var _mtac = {};
+  	(function() {
+  		var mta = document.createElement("script");
+  		mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";
+  		mta.setAttribute("name", "MTAH5");
+  		mta.setAttribute("sid", "500451373");
+
+  		var s = document.getElementsByTagName("script")[0];
+  		s.parentNode.insertBefore(mta, s);
+  	})();
+</script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">停云馆</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Seafun</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://qianpm.com/code/blockchain/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Seafun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="停云馆">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                区块链与比特币
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-15T12:28:07+08:00">
+                2017-05-15
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-05-19T23:18:00+08:00">
+                2017-05-19
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/code/" itemprop="url" rel="index">
+                    <span itemprop="name">程序猿</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+<br>
+          
+          
+          <span class="post-count">
+            <span class="post-meta-item-icon">
+          	<i class="fa fa-file-word-o"></i>
+            </span>
+            <span class="post-meta-item-text">本文共</span>
+            <span class="post-meta-item-text"></span>
+            <span class="post-meta-item-text">字</span>
+          </span>
+          
+          <span class="post-count">
+            &nbsp; | &nbsp;
+            <span class="post-meta-item-icon">
+          	<i class="fa fa-clock-o"></i>
+            </span>
+            <span class="post-meta-item-text">阅读预计</span>
+            <span class="post-meta-item-text"></span>
+            <span class="post-meta-item-text">分钟</span>
+          </span>
+          
+
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>区块链与比特币</p>
+<a id="more"></a> 
+<h2 id="简单说明"><a href="#简单说明" class="headerlink" title="简单说明"></a>简单说明</h2><blockquote>
+<p> 区块链是种底层协议,比特币是区块链的应用</p>
+</blockquote>
+<h2 id="区块链是种底层协议-比特币是区块链的应用"><a href="#区块链是种底层协议-比特币是区块链的应用" class="headerlink" title="区块链是种底层协议,比特币是区块链的应用"></a>区块链是种底层协议,比特币是区块链的应用</h2><p>区块链是一种新型去中心化协议，能安全地存储数据，保证信息不可伪造和篡改(篡改成本巨大)，可以自动执行设定的合约，无需任何中心化机构的审核。交易既可以是比特币这样的数字货币，也可以是债权、股权、版权等数字资产，区块链技术大大降低了现实经济的信任成本与会计成本。简单而言:区块链是一种底层协议， 比特币是在这种底层协议上开发的第一个项目，比特币本身不代表任何意义。</p>
+<p>区块链每个节点可以做到相互信任，而不依赖任何一个中心。避免了支付宝依赖阿里巴巴,QQ依赖腾讯这种,中心化机构倒下后,整体处于不可用的状态的情况。比特币是区块链思想的第一个成功且应用较广泛的实例。</p>
+<h2 id="区块链衍生出来的其他应用——Sic云存储系统"><a href="#区块链衍生出来的其他应用——Sic云存储系统" class="headerlink" title="区块链衍生出来的其他应用——Sic云存储系统"></a>区块链衍生出来的其他应用——Sic云存储系统</h2><p>Sic是一个基于区块链协议来发的去中心化的云存储系统。每个人可以将自己的计算机贡献出来，有人在Sic上存储东西，Sic会将文件分割，分别加密后存在不同的节点上，这些节点就是大家共享的电脑。 区块链协议在设计理念上假设人都是贪婪且自私的。为了鼓励大家共享电脑,在区块链之上开发系统的设计者就会设计一种以算法为基础的代币。有人贡献自己电脑的过程，系统就会奖励给这些人一些代币。</p>
+<p>贡献的电脑有几方面作用：</p>
+<p>第一是个证伪。区块链每个节点之所以可以做到相互信任，就是因为区块链有个全网公证的合约。每个节点都在用自己的计算机计算这条链上的每笔交易是否为真实的，大于50%，合约生效，该交易被写入区块链，并且同步任何一个节点，这里值得一说的有两点：</p>
+<p>1、区块链伪造难度很大。 一个黑客要在区块链插入一条假数据，他的计算机的计算能力（这个叫算力）得超过全网50%。</p>
+<p>2、节点都在全网公证，但每次只有一个人是最快的，最快的这个人能的到系统奖励的代币。而这个公证的过程就叫挖矿，公证的机器或人叫矿工。</p>
+<p>第二是出租自己的硬盘空间。出租自己的硬盘空间,作为整个系统的存储空间,系统将给予奖励。 这也就是说每个系统都会有个代币，而Sic存储系统上的代币就是SC(Sic coin)币。</p>
+<p>区块链存储，通过区块链终端以经济激励的方式让用户把闲置的存储资源和带宽资源贡献出来，利用这些资源为个人用户或企业提供相关产品或服务。</p>
+<h2 id="区块链未来的发展"><a href="#区块链未来的发展" class="headerlink" title="区块链未来的发展"></a>区块链未来的发展</h2><p>当下的区块链技术，已经从金融科技转移到其它应用领域。现在大部分团队都在想用区块链颠覆现有的互联网体系，包括腾讯、谷歌这样的大公司。不过现在还有许多问题待解决，任重而道远。</p>
+<p><img src="https://ws3.sinaimg.cn/large/006tKfTcly1ffr2o2lobhj30go0cwt93.jpg" alt=""></p>
+<h2 id="关于“WannaCry”勒索病毒"><a href="#关于“WannaCry”勒索病毒" class="headerlink" title="关于“WannaCry”勒索病毒"></a>关于“WannaCry”勒索病毒</h2><p>其实该病毒与比特币毫无关系，之所以在广大媒体中被命名成”比特币勒索病毒”，是因为勒索者要求受害者用比特币来支付赎金，这就牵扯到了比特币本身的匿名性，导致其在洗钱，暗网中的广泛使用，这也是人性本恶的反映。</p>
+<p>到最后不得不说一句技术本无罪，错的是利用技术作恶的人。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://ww2.sinaimg.cn/large/006tNc79ly1ffhb1j29gkj30ic0icgnx.jpg" alt="Seafun wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫一扫上面的二维码加我微信！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/wechat-qcode.png" alt="Seafun WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/uploads/alipay-qcode.png" alt="Seafun Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/区块链/" rel="tag"># 区块链</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/pm/datareport/" rel="next" title="三节课-怎样生成数据报告">
+                <i class="fa fa-chevron-left"></i> 三节课-怎样生成数据报告
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/reference/resource-site/" rel="prev" title="资源网站汇总">
+                资源网站汇总 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Seafun" />
+          <p class="site-author-name" itemprop="name">Seafun</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">73</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">53</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/zhangzhuqian" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/zhangzhuqian" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/1789347757/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/zhangzhuqian" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://ww4.sinaimg.cn/large/006tNbRwly1fclh3brl76j30iq0ow76j.jpg" target="_blank" title="微信">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微信
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://qianpm.com/about/" title="友情链接申请" target="_blank">友情链接申请</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单说明"><span class="nav-number">1.</span> <span class="nav-text">简单说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区块链是种底层协议-比特币是区块链的应用"><span class="nav-number">2.</span> <span class="nav-text">区块链是种底层协议,比特币是区块链的应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区块链衍生出来的其他应用——Sic云存储系统"><span class="nav-number">3.</span> <span class="nav-text">区块链衍生出来的其他应用——Sic云存储系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区块链未来的发展"><span class="nav-number">4.</span> <span class="nav-text">区块链未来的发展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于“WannaCry”勒索病毒"><span class="nav-number">5.</span> <span class="nav-text">关于“WannaCry”勒索病毒</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+
+&copy;  2017 - 
+<span itemprop="copyrightYear">2018</span>
+<span class="with-love">
+<i class="fa fa-heart"></i>
+</span>
+<span class="author" itemprop="copyrightHolder">Seafun</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访客数<class="fa fa-user">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量<class="fa fa-eye">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="true"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+</body>
+</html>
