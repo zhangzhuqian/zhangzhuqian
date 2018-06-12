@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qianpm.com/"/>
-  <updated>2018-06-06T13:24:24.000Z</updated>
+  <updated>2018-06-12T04:57:29.047Z</updated>
   <id>http://qianpm.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>币圈运营究竟是做什么的</title>
+    <link href="http://qianpm.com/token/1/"/>
+    <id>http://qianpm.com/token/1/</id>
+    <published>2018-06-12T04:56:03.000Z</published>
+    <updated>2018-06-12T04:57:29.047Z</updated>
+    
+    <summary type="html">
+    
+      币圈运营究竟是做什么的
+    
+    </summary>
+    
+      <category term="币圈" scheme="http://qianpm.com/categories/token/"/>
+    
+    
+      <category term="运营" scheme="http://qianpm.com/tags/%E8%BF%90%E8%90%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>上手 iOS 12&amp;Mac 10.14的感受</title>
@@ -459,26 +479,6 @@
     
     
       <category term="教程" scheme="http://qianpm.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你的产品逻辑是乱的</title>
-    <link href="http://qianpm.com/pm/product_logic_wrong/"/>
-    <id>http://qianpm.com/pm/product_logic_wrong/</id>
-    <published>2017-05-26T12:04:49.000Z</published>
-    <updated>2017-05-27T16:25:29.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;当你的产品被评价为产品逻辑乱的时候,他们是怎么评价的&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="产品经理" scheme="http://qianpm.com/categories/pm/"/>
-    
-    
-      <category term="产品逻辑" scheme="http://qianpm.com/tags/%E4%BA%A7%E5%93%81%E9%80%BB%E8%BE%91/"/>
     
   </entry>
   
